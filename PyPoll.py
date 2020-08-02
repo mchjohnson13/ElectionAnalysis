@@ -12,6 +12,16 @@ file_to_save = os.path.join("Analysis","election_analysis.txt")
     # Write some data to the file
     #txt_file.write("Counties in the Election\n--------------------\nArapahoe\nDenver\nJefferson")
 
+# Initialize total vote counter
+total_votes = 0
+
+# Initialize candidate options list
+candidate_options = []
+
+# Declare candidate votes dictionary
+candidate_votes = {}
+
+
 # Open election results file and read.
 with open(file_to_load) as election_data:
 
@@ -21,12 +31,29 @@ with open(file_to_load) as election_data:
     headers = next(file_reader)
     print(headers)
 
+    for row in file_reader:
+        # Total vote count
+        total_votes += 1
+
+        # Candidate name
+        candidate_name = row[2]
+        # If a candidate is not in the options...
+        if candidate_name not in candidate_options:
+            # Add the name to the options list
+            candidate_options.append(candidate_name)
+            # Start tracking candidate votes
+            candidate_votes[candidate_name] = 0
+        candidate_votes[candidate_name] += 1
+
     # The data we need to retrieve
-    # 1. Total number of votes cast
-    # 2. List of candidates who received votes
-    # 3. Percentage of votes for each candidate
-    # 4. Total number of votes for each candidate
-    # 5. Winner of the election based on popular vote
+# Total number of votes cast
+print(total_votes)
+# List of candidates who received votes
+print(candidate_options)
+# Total number of votes for each candidate
+print(candidate_votes)
+# Percentage of votes for each candidate
+# Winner of the election based on popular vote
 
     #print(election_data)
 
