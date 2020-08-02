@@ -8,14 +8,18 @@ file_to_load = os.path.join("Resources","election_results.csv")
 file_to_save = os.path.join("Analysis","election_analysis.txt")
 
 #Use with statement to open the file as a text file.
-with open(file_to_save,"w") as txt_file:
+#with open(file_to_save,"w") as txt_file:
     # Write some data to the file
-    txt_file.write("Hello World")
+    #txt_file.write("Counties in the Election\n--------------------\nArapahoe\nDenver\nJefferson")
 
 # Open election results file and read.
 with open(file_to_load) as election_data:
 
-    #Perform Analysis
+    file_reader = csv.reader(election_data)
+
+    # Read and print header row.
+    headers = next(file_reader)
+    print(headers)
 
     # The data we need to retrieve
     # 1. Total number of votes cast
@@ -24,6 +28,6 @@ with open(file_to_load) as election_data:
     # 4. Total number of votes for each candidate
     # 5. Winner of the election based on popular vote
 
-    print(election_data)
+    #print(election_data)
 
 
