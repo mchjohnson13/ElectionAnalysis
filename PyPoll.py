@@ -29,7 +29,7 @@ with open(file_to_load) as election_data:
 
     # Read and print header row.
     headers = next(file_reader)
-    print(headers)
+    #print(headers)
 
     for row in file_reader:
         # Total vote count
@@ -45,13 +45,11 @@ with open(file_to_load) as election_data:
             candidate_votes[candidate_name] = 0
         candidate_votes[candidate_name] += 1
 
-    # The data we need to retrieve
-# Total number of votes cast
-print(total_votes)
-# List of candidates who received votes
-print(candidate_options)
-# Total number of votes for each candidate
-print(candidate_votes)
+# Winning Candidate stat tracker
+winning_candidate = ""
+winning_count = 0
+winning_percentage = 0
+
 # Percentage of votes for each candidate
 for candidate_name in candidate_votes:
     # Retreive vote count for each candidate
@@ -59,9 +57,22 @@ for candidate_name in candidate_votes:
     # Calculate percentage of votes.
     vote_percentage = float(votes)/float(total_votes)*100
     # Print candidate name and percentage of votes.
-    print(f"{candidate_name}: received {vote_percentage:.2f}% of the vote.")
+    print(f"{candidate_name}: {vote_percentage:.1f}% ({votes})\n")
+
+
+# Determine winning vote count and candidate
+    if (votes > winning_count) and (vote_percentage > winning_percentage):
+        # If true replace winning_count with votes and winning_percent with vote_percentage
+        winning_count = votes
+        winning_percentage = vote_percentage
+        # Set the winning_candidate to the candidate's name.
+        winning_candidate = candidate_name
+
 # Winner of the election based on popular vote
+winning_candidate_summary = (
+    f"--------------------\n"
+    f"Winner: {winning_candidate}\n"
+    f"Winning Vote Count: {winning_count:,}\n"
+    f"Winning Percentage: {winning_percentage:.1f}%\n")
 
-    #print(election_data)
-
-
+print(winning_candidate_summary)
