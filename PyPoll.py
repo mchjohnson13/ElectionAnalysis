@@ -53,6 +53,13 @@ print(candidate_options)
 # Total number of votes for each candidate
 print(candidate_votes)
 # Percentage of votes for each candidate
+for candidate_name in candidate_votes:
+    # Retreive vote count for each candidate
+    votes = candidate_votes[candidate_name]
+    # Calculate percentage of votes.
+    vote_percentage = float(votes)/float(total_votes)*100
+    # Print candidate name and percentage of votes.
+    print(f"{candidate_name}: received {vote_percentage:.2f}% of the vote.")
 # Winner of the election based on popular vote
 
     #print(election_data)
