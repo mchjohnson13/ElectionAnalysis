@@ -26,20 +26,19 @@ Results are summarized in the [election_results.txt](./Analysis/election_results
 There was a total of 369,711 votes cast in this congressional election.
 ### Candidate Results 
 Three candidates received votes:
- 1. The winner was Diana DeGette who received 73.8% of the votes with 272,892 votes.
- 2. The next highest candidate was Charles Casper Stockham who received 23.0% of the vote with 85,213 votes.
- 3. The lowest candidate was Raymon Anthony Doane who received 3.1% of the vote with 24,801 votes.
+ 1. The winner was Diana DeGette who received 73.8% of the voters with 272,892 votes.
+ 2. The next highest candidate was Charles Casper Stockham who received 23.0% of the voters with 85,213 votes.
+ 3. The lowest candidate was Raymon Anthony Doane who received 3.1% of the voters with 24,801 votes.
 
 
 ### County Results
 There were three counties included in the election.  
-1. Denver county had the highest turnout with 82.8% of the electorate which was 305,055 voters.  
-2. Jefferson county had the second highest turnout with 10.5% of the electorate which was 38,855 voters.  
-3. Arapahoe county had the lowest turnout with 6.7% of the electorate with 24,801 voters.
+1. Denver county had the highest turnout with 82.8% of the votes which was 305,055 voters.  
+2. Jefferson county had the second highest turnout with 10.5% of the votes which was 38,855 voters.  
+3. Arapahoe county had the lowest turnout with 6.7% of the votes with 24,801 voters.
 
 ## Election-Audit Summary
-This script could easily be used in future election with some small modifications.  
-1. For local elections, 
+1. This script could be used to tally votes for Propositions by counting the numbers of yes/no votes.
 2. 
 
 
