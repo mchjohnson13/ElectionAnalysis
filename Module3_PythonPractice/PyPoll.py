@@ -2,10 +2,10 @@ import csv
 import os
 
 # Assign file to load to file path
-file_to_load = os.path.join("Resources","election_results.csv")
+file_to_load = os.path.join("..","Resources","election_results.csv")
 
 # Assign flie to save to file path
-file_to_save = os.path.join("Analysis","election_analysis.txt")
+file_to_save = os.path.join("election_analysis.txt")
 
 # Initialize total vote counter
 total_votes = 0

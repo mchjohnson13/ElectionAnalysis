@@ -21,7 +21,9 @@ Assist in election audit of tabulated results for a U.S. Congressional precinct 
 - Software: Python 3.7.6, Visual Studio Code 1.47.3
 
 ## Summary
-There was a total of 369,711 votes cast in the election.
+Results are summarized in the [election_results.txt](./Analysis/election_results.txt)  
+  
+There was a total of 369,711 votes cast in this congressional election.
 ### Candidate Results 
 Three candidates received votes:
  1. The winner was Diana DeGette who received 73.8% of the votes with 272,892 votes.
@@ -33,7 +35,12 @@ Three candidates received votes:
 There were three counties included in the election.  
 1. Denver county had the highest turnout with 82.8% of the electorate which was 305,055 voters.  
 2. Jefferson county had the second highest turnout with 10.5% of the electorate which was 38,855 voters.  
-3. Arapahoe county had the lowest turnout with 6.7% of the electorate with 24,801 voters.  
+3. Arapahoe county had the lowest turnout with 6.7% of the electorate with 24,801 voters.
+
+## Election-Audit Summary
+This script could easily be used in future election with some small modifications.  
+1. For local elections, 
+2. 
 
 
 
