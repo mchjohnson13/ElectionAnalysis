@@ -1,7 +1,7 @@
 # Module 3: Election Analysis
 
 ## Project Overview
-Assist in election audit of tabulated results for a U.S. Congressional precinct in Colorado. 
+In this project, a Congressional precinct in Colorado requested help in performing an audit of tabulated results from a recent election. The audid included an analysis of the Candidates and the Counties. 
 
 ### Candidate Data Analysis
 1. Calculate the total number of votes
@@ -39,7 +39,7 @@ There were three counties included in the election.
 
 ## Election-Audit Summary
 1. This script could be used to tally votes for Propositions by counting the numbers of yes/no votes.
-2. 
+2. As long as the *.csv file is organized in the same way and the same information was analyzed, this script should work without any modifications.
 
 
 
