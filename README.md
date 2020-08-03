@@ -1,7 +1,7 @@
 # Module 3: Election Analysis
 
 ## Project Overview
-In this project, a Congressional precinct in Colorado requested help in performing an audit of tabulated results from a recent election. The audid included an analysis of the Candidates and the Counties. 
+In this project, a Congressional precinct in Colorado requested help in performing an audit of tabulated results from a recent election. The audit included an analysis of the Candidates and the Counties. 
 
 ### Candidate Data Analysis
 1. Calculate the total number of votes
